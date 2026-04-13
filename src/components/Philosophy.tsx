@@ -32,15 +32,11 @@ export function Philosophy() {
             }`}
           >
             <img
-              src="/placeholder-user.jpg"
+              src="https://cdn.poehali.dev/projects/5cbb501a-bde2-4fd5-b15f-6d8a52333341/bucket/25440f92-f3f4-4677-b415-3444766753f7.jpg"
               alt="Игорь Анатольевич Слепеньков"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover object-top"
             />
             <div className="absolute bottom-0 left-0 w-24 h-24 bg-terracotta/80" />
-            <div className="absolute bottom-8 left-8 right-8">
-              <p className="text-primary-foreground/90 font-serif text-lg">Игорь Анатольевич Слепеньков</p>
-              <p className="text-primary-foreground/60 text-sm tracking-widest uppercase mt-1">Замените на своё фото</p>
-            </div>
           </div>
 
           {/* Content */}
