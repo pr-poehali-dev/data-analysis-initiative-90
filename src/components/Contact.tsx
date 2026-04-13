@@ -1,13 +1,8 @@
-import type React from "react"
 import { useEffect, useRef, useState } from "react"
+import Icon from "@/components/ui/icon"
 
 export function Contact() {
   const [isVisible, setIsVisible] = useState(false)
-  const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    message: "",
-  })
   const sectionRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
@@ -27,12 +22,6 @@ export function Contact() {
     return () => observer.disconnect()
   }, [])
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission
-    console.log(formState)
-  }
-
   return (
     <section ref={sectionRef} id="contact" className="py-32 lg:py-40 px-6 lg:px-12">
       <div className="max-w-7xl mx-auto">
@@ -44,22 +33,22 @@ export function Contact() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >
-              Контакты
+              Запись на приём
             </p>
             <h2
               className={`font-serif text-4xl md:text-5xl lg:text-6xl font-light text-foreground mb-8 text-balance transition-all duration-1000 delay-200 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
-              Готовы начать?
+              Начните путь к себе
             </h2>
             <p
               className={`text-muted-foreground leading-relaxed mb-12 max-w-md transition-all duration-1000 delay-300 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
-              Каждое осмысленное пространство начинается с разговора. Расскажите о вашем видении,
-              и мы вместе найдём способ воплотить его в жизнь.
+              Каждое исцеление начинается с первого шага. Запишитесь на приём — и мы вместе найдём
+              путь к вашей целостности и здоровью.
             </p>
 
             {/* Contact Info */}
@@ -69,82 +58,86 @@ export function Contact() {
               }`}
             >
               <div>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Почта</p>
-                <a href="mailto:hello@example.com" className="text-foreground hover:text-sage transition-colors">
-                  hello@example.com
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Телефон / WhatsApp</p>
+                <a href="tel:+79174440090" className="text-foreground hover:text-sage transition-colors text-lg">
+                  +7 917 444-00-90
                 </a>
               </div>
               <div>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Локация</p>
-                <p className="text-foreground">Москва и Санкт-Петербург</p>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Адрес приёма</p>
+                <p className="text-foreground">г. Уфа, ул. Ростовская, д. 18Б</p>
+              </div>
+              <div>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mb-3">Социальные сети</p>
+                <div className="flex gap-4 flex-wrap">
+                  <a
+                    href="#"
+                    className="inline-flex items-center gap-2 text-sm text-foreground hover:text-sage transition-colors border border-border px-4 py-2 hover:border-sage"
+                  >
+                    <Icon name="MessageCircle" size={16} />
+                    ВКонтакте
+                  </a>
+                  <a
+                    href="#"
+                    className="inline-flex items-center gap-2 text-sm text-foreground hover:text-sage transition-colors border border-border px-4 py-2 hover:border-sage"
+                  >
+                    <Icon name="Send" size={16} />
+                    Telegram
+                  </a>
+                  <a
+                    href="https://wa.me/79174440090"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm text-foreground hover:text-sage transition-colors border border-border px-4 py-2 hover:border-sage"
+                  >
+                    <Icon name="Phone" size={16} />
+                    WhatsApp
+                  </a>
+                  <a
+                    href="#"
+                    className="inline-flex items-center gap-2 text-sm text-foreground hover:text-sage transition-colors border border-border px-4 py-2 hover:border-sage"
+                  >
+                    <Icon name="MessagesSquare" size={16} />
+                    Max
+                  </a>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Right Column - Form */}
+          {/* Right Column - CTA */}
           <div
-            className={`transition-all duration-1000 delay-500 ${
+            className={`flex flex-col justify-center transition-all duration-1000 delay-500 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <form onSubmit={handleSubmit} className="space-y-8">
-              <div>
-                <label htmlFor="name" className="block text-xs tracking-widest uppercase text-muted-foreground mb-3">
-                  Имя
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  value={formState.name}
-                  onChange={(e) => setFormState({ ...formState, name: e.target.value })}
-                  className="w-full bg-transparent border-b border-border py-3 text-foreground placeholder:text-muted-foreground/50 focus:border-sage focus:outline-none transition-colors"
-                  placeholder="Ваше имя"
-                  required
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-xs tracking-widest uppercase text-muted-foreground mb-3">
-                  Почта
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  value={formState.email}
-                  onChange={(e) => setFormState({ ...formState, email: e.target.value })}
-                  className="w-full bg-transparent border-b border-border py-3 text-foreground placeholder:text-muted-foreground/50 focus:border-sage focus:outline-none transition-colors"
-                  placeholder="ваш@email.com"
-                  required
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-xs tracking-widest uppercase text-muted-foreground mb-3">
-                  Сообщение
-                </label>
-                <textarea
-                  id="message"
-                  value={formState.message}
-                  onChange={(e) => setFormState({ ...formState, message: e.target.value })}
-                  rows={4}
-                  className="w-full bg-transparent border-b border-border py-3 text-foreground placeholder:text-muted-foreground/50 focus:border-sage focus:outline-none transition-colors resize-none"
-                  placeholder="Расскажите о вашем проекте..."
-                  required
-                />
-              </div>
-              <button
-                type="submit"
-                className="group inline-flex items-center gap-3 px-8 py-4 bg-sage text-primary-foreground text-sm tracking-widest uppercase hover:bg-sage/90 transition-all duration-500"
-              >
-                Отправить
-                <svg
-                  className="w-4 h-4 transition-transform duration-500 group-hover:translate-x-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+            <div className="bg-sand/50 p-10 lg:p-14">
+              <p className="font-serif text-3xl md:text-4xl text-foreground font-light mb-6 leading-tight">
+                Личный приём в Уфе
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-8">
+                Принимаю индивидуально. Каждый сеанс — это отдельная встреча с вашим телом и душой,
+                без спешки и шаблонов.
+              </p>
+              <div className="space-y-4">
+                <a
+                  href="tel:+79174440090"
+                  className="group w-full inline-flex items-center justify-center gap-3 px-8 py-4 bg-sage text-primary-foreground text-sm tracking-widest uppercase hover:bg-sage/90 transition-all duration-500"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </button>
-            </form>
+                  <Icon name="Phone" size={16} />
+                  Позвонить
+                </a>
+                <a
+                  href="https://wa.me/79174440090"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group w-full inline-flex items-center justify-center gap-3 px-8 py-4 border border-sage text-sage text-sm tracking-widest uppercase hover:bg-sage/10 transition-all duration-500"
+                >
+                  <Icon name="MessageCircle" size={16} />
+                  Написать в WhatsApp
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

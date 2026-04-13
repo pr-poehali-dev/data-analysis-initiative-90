@@ -1,57 +1,30 @@
 import { useEffect, useRef, useState } from "react"
+import Icon from "@/components/ui/icon"
 
 const services = [
   {
-    title: "Жилые интерьеры",
-    description: "Полное преображение дома с учётом вашего образа жизни. От отдельных комнат до целых резиденций.",
-    icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-        />
-      </svg>
-    ),
+    title: "Кинезиология",
+    description:
+      "Диагностика и коррекция через мышечное тестирование. Метод выявляет глубинные причины дисбалансов — физических, эмоциональных, энергетических — и помогает восстановить естественную гармонию.",
+    iconName: "Activity",
   },
   {
-    title: "Планировка",
-    description: "Продуманные решения, создающие естественный поток и функциональные зоны для жизни, работы и отдыха.",
-    icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
-        />
-      </svg>
-    ),
+    title: "Остеопатия",
+    description:
+      "Мягкая работа с телом: восстановление подвижности тканей, снятие хронических болей и зажимов. Тело само подсказывает, где искать причину — нужно лишь уметь слышать.",
+    iconName: "HandHeart",
   },
   {
-    title: "Подбор материалов",
-    description: "Натуральные материалы и авторские предметы ручной работы, которые красиво стареют и рассказывают историю.",
-    icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
-        />
-      </svg>
-    ),
+    title: "Гештальт-терапия",
+    description:
+      "Работа с незавершёнными ситуациями и подавленными чувствами. Помогает осознать паттерны, мешающие жить полно, восстановить контакт с собой и выстроить здоровые отношения.",
+    iconName: "Brain",
   },
   {
-    title: "Светодизайн",
-    description: "Многоуровневое освещение, меняющееся в течение дня, создающее атмосферу и поддерживающее благополучие.",
-    icon: (
-      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-        />
-      </svg>
-    ),
+    title: "Онтология и психология",
+    description:
+      "Глубинный взгляд на природу человека и его место в мире. Работа с жизненными смыслами, ценностями и целями — для тех, кто ищет не просто решение проблемы, но новый уровень осознанности.",
+    iconName: "Sparkles",
   },
 ]
 
@@ -86,14 +59,14 @@ export function Services() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Наши услуги
+            Методы работы
           </p>
           <h2
             className={`font-serif text-4xl md:text-5xl lg:text-6xl font-light text-foreground text-balance transition-all duration-1000 delay-200 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            Что мы делаем
+            Инструменты исцеления
           </h2>
         </div>
 
@@ -108,7 +81,7 @@ export function Services() {
               style={{ transitionDelay: `${300 + index * 150}ms` }}
             >
               <div className="text-sage mb-6 transition-transform duration-500 group-hover:scale-110">
-                {service.icon}
+                <Icon name={service.iconName} size={32} fallback="Heart" />
               </div>
               <h3 className="font-serif text-2xl md:text-3xl text-foreground mb-4">{service.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{service.description}</p>

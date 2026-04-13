@@ -22,22 +22,25 @@ export function Philosophy() {
   }, [])
 
   return (
-    <section ref={sectionRef} id="philosophy" className="py-32 lg:py-40 px-6 lg:px-12">
+    <section ref={sectionRef} id="biography" className="py-32 lg:py-40 px-6 lg:px-12">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-          {/* Image */}
+          {/* Photo placeholder */}
           <div
             className={`relative aspect-[4/5] bg-sand overflow-hidden transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
             }`}
           >
             <img
-              src="/minimalist-japanese-interior-design-with-natural-w.jpg"
-              alt="Минималистичный интерьер с натуральным деревом"
+              src="/placeholder-user.jpg"
+              alt="Игорь Анатольевич Слепеньков"
               className="absolute inset-0 w-full h-full object-cover"
             />
-            {/* Overlay accent */}
             <div className="absolute bottom-0 left-0 w-24 h-24 bg-terracotta/80" />
+            <div className="absolute bottom-8 left-8 right-8">
+              <p className="text-primary-foreground/90 font-serif text-lg">Игорь Анатольевич Слепеньков</p>
+              <p className="text-primary-foreground/60 text-sm tracking-widest uppercase mt-1">Замените на своё фото</p>
+            </div>
           </div>
 
           {/* Content */}
@@ -47,7 +50,7 @@ export function Philosophy() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >
-              Наша философия
+              Биография
             </p>
 
             <h2
@@ -55,10 +58,8 @@ export function Philosophy() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
-              Искусство
-              <span className="italic"> осознанной</span>
-              <br />
-              жизни
+              Путь к
+              <span className="italic"> целостности</span>
             </h2>
 
             <div
@@ -67,13 +68,17 @@ export function Philosophy() {
               }`}
             >
               <p>
-                Мы верим, что каждое пространство таит в себе потенциал для преображения. Не через добавление,
-                а через бережное вычитание — открывая то, что всегда было предначертано.
+                Более 20 лет я помогаю людям восстановить связь с собой — телом, душой и разумом. Мой путь объединяет
+                онтологию, кинезиологию, гештальт-терапию и остеопатию в единый экологичный подход к исцелению.
               </p>
               <p>
-                Наш подход вдохновлён японской концепцией <em className="text-foreground">ма</em> — глубокой
-                красотой пустоты — и скандинавским пониманием
-                <em className="text-foreground"> хюгге</em>, этого ощущения уютного умиротворения.
+                Я убеждён: тело обладает природной мудростью и способностью к самовосстановлению. Моя задача — помочь
+                убрать преграды на этом пути, чтобы человек обрёл подлинную{" "}
+                <em className="text-foreground">целостность</em> и жизненную силу.
+              </p>
+              <p>
+                Принимаю в Уфе, работаю с самыми разными жизненными трудностями — от хронических болей и усталости
+                до сложных эмоциональных состояний и потери смысла.
               </p>
             </div>
 
@@ -84,16 +89,16 @@ export function Philosophy() {
               }`}
             >
               <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">12</p>
+                <p className="font-serif text-3xl md:text-4xl text-sage">20+</p>
                 <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Лет опыта</p>
               </div>
               <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">140+</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Проектов</p>
+                <p className="font-serif text-3xl md:text-4xl text-sage">5</p>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Методов</p>
               </div>
               <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">8</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Наград</p>
+                <p className="font-serif text-3xl md:text-4xl text-sage">∞</p>
+                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Изменений</p>
               </div>
             </div>
           </div>

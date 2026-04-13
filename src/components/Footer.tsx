@@ -5,9 +5,10 @@ export function Footer() {
         <div className="grid md:grid-cols-12 gap-12">
           {/* Logo & Tagline */}
           <div className="md:col-span-4">
-            <p className="font-serif text-2xl tracking-wide text-foreground mb-4">Wabi</p>
+            <p className="font-serif text-2xl tracking-wide text-foreground mb-1">Игорь Слепеньков</p>
+            <p className="text-xs tracking-widest uppercase text-muted-foreground mb-4">Онтолог · Кинезиолог · Остеопат</p>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Японский минимализм в сочетании со скандинавским теплом.
+              20 лет помогаю людям обрести целостность — через естественное восстановление тела и души.
             </p>
           </div>
 
@@ -15,14 +16,17 @@ export function Footer() {
           <div className="md:col-span-2 md:col-start-7">
             <p className="text-xs tracking-widest uppercase text-muted-foreground mb-4">Навигация</p>
             <nav className="flex flex-col gap-3">
-              <a href="#philosophy" className="text-sm text-foreground hover:text-sage transition-colors">
-                Философия
+              <a href="#biography" className="text-sm text-foreground hover:text-sage transition-colors">
+                Биография
               </a>
               <a href="#services" className="text-sm text-foreground hover:text-sage transition-colors">
-                Услуги
+                Методы
               </a>
-              <a href="#process" className="text-sm text-foreground hover:text-sage transition-colors">
-                Процесс
+              <a href="#seminars" className="text-sm text-foreground hover:text-sage transition-colors">
+                Семинары
+              </a>
+              <a href="#reviews" className="text-sm text-foreground hover:text-sage transition-colors">
+                Отзывы
               </a>
               <a href="#contact" className="text-sm text-foreground hover:text-sage transition-colors">
                 Контакты
@@ -35,37 +39,40 @@ export function Footer() {
             <p className="text-xs tracking-widest uppercase text-muted-foreground mb-4">Соцсети</p>
             <nav className="flex flex-col gap-3">
               <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
-                Instagram
-              </a>
-              <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
-                Pinterest
+                ВКонтакте
               </a>
               <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
                 Telegram
               </a>
+              <a href="https://wa.me/79174440090" target="_blank" rel="noopener noreferrer" className="text-sm text-foreground hover:text-sage transition-colors">
+                WhatsApp
+              </a>
+              <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
+                Max
+              </a>
             </nav>
           </div>
 
-          {/* Legal */}
+          {/* Contact */}
           <div className="md:col-span-2">
-            <p className="text-xs tracking-widest uppercase text-muted-foreground mb-4">Документы</p>
-            <nav className="flex flex-col gap-3">
-              <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
-                Политика
+            <p className="text-xs tracking-widest uppercase text-muted-foreground mb-4">Приём</p>
+            <div className="flex flex-col gap-3">
+              <a href="tel:+79174440090" className="text-sm text-foreground hover:text-sage transition-colors">
+                +7 917 444-00-90
               </a>
-              <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
-                Условия
-              </a>
-            </nav>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                г. Уфа,<br />ул. Ростовская, 18Б
+              </p>
+            </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Wabi Studio. Все права защищены.
+            &copy; {new Date().getFullYear()} Игорь Анатольевич Слепеньков. Все права защищены.
           </p>
-          <p className="text-xs text-muted-foreground">Создано с намерением</p>
+          <p className="text-xs text-muted-foreground">Создано с намерением и заботой</p>
         </div>
       </div>
     </footer>

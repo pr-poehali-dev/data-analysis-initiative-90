@@ -8,29 +8,36 @@ export function Header() {
       <nav className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <a href="/" className="font-serif text-2xl tracking-wide text-foreground">
-            Wabi
+          <a href="/" className="font-serif text-xl tracking-wide text-foreground leading-tight">
+            <span className="block">Игорь Слепеньков</span>
+            <span className="block text-xs tracking-[0.2em] text-muted-foreground font-sans font-light uppercase">Онтолог · Кинезиолог · Остеопат</span>
           </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-12">
             <a
-              href="#philosophy"
+              href="#biography"
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
             >
-              Философия
+              Биография
             </a>
             <a
               href="#services"
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
             >
-              Услуги
+              Методы
             </a>
             <a
-              href="#process"
+              href="#seminars"
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
             >
-              Процесс
+              Семинары
+            </a>
+            <a
+              href="#reviews"
+              className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
+            >
+              Отзывы
             </a>
             <a
               href="#contact"
@@ -64,25 +71,32 @@ export function Header() {
         >
           <div className="flex flex-col gap-6 pt-4">
             <a
-              href="#philosophy"
+              href="#biography"
               onClick={() => setIsMenuOpen(false)}
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
             >
-              Философия
+              Биография
             </a>
             <a
               href="#services"
               onClick={() => setIsMenuOpen(false)}
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
             >
-              Услуги
+              Методы
             </a>
             <a
-              href="#process"
+              href="#seminars"
               onClick={() => setIsMenuOpen(false)}
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
             >
-              Процесс
+              Семинары
+            </a>
+            <a
+              href="#reviews"
+              onClick={() => setIsMenuOpen(false)}
+              className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Отзывы
             </a>
             <a
               href="#contact"
