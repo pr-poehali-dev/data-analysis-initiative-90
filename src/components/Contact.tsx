@@ -71,14 +71,18 @@ export function Contact() {
                 <p className="text-xs tracking-widest uppercase text-muted-foreground mb-3">Социальные сети</p>
                 <div className="flex gap-4 flex-wrap">
                   <a
-                    href="#"
+                    href="https://vk.ru/id43931052"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-sm text-foreground hover:text-sage transition-colors border border-border px-4 py-2 hover:border-sage"
                   >
                     <Icon name="MessageCircle" size={16} />
                     ВКонтакте
                   </a>
                   <a
-                    href="#"
+                    href="https://t.me/Igorslepenkov"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-sm text-foreground hover:text-sage transition-colors border border-border px-4 py-2 hover:border-sage"
                   >
                     <Icon name="Send" size={16} />
@@ -94,11 +98,13 @@ export function Contact() {
                     WhatsApp
                   </a>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/igorslepenkov?igsh=aTBuZTV4YmVnN2xq"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-sm text-foreground hover:text-sage transition-colors border border-border px-4 py-2 hover:border-sage"
                   >
-                    <Icon name="MessagesSquare" size={16} />
-                    Max
+                    <Icon name="Instagram" size={16} />
+                    Instagram
                   </a>
                 </div>
               </div>
