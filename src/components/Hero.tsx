@@ -18,9 +18,7 @@ export function Hero() {
           className={`text-xs tracking-[0.3em] uppercase text-muted-foreground mb-8 transition-all duration-1000 delay-300 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
-        >
-          Онтолог · Кинезиолог · Психолог · Гештальт-терапевт · Остеопат
-        </p>
+        >самые эффективные техники восстановления</p>
 
         {/* Main Headline */}
         <h1
@@ -37,9 +35,7 @@ export function Hero() {
           className={`text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-12 transition-all duration-1000 delay-700 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
-        >
-          20 лет помогаю людям обрести целостность — через естественное восстановление тела, исцеление души и разрешение жизненных трудностей.
-        </p>
+        >25 лет помогаю людям обрести целостность — через естественное восстановление тела, и исцеление души.</p>
 
         {/* CTA */}
         <div
