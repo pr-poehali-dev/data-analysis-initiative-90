@@ -66,25 +66,7 @@ export function Philosophy() {
               <p>Принимаю в Уфе, помогаю справиться с самыми разными жизненными трудностями — хронические и острые боли, усталость, трудные эмоциональные состояния, потеря смысла жизни и др.</p>
             </div>
 
-            {/* Stats */}
-            <div
-              className={`grid grid-cols-3 gap-8 mt-12 pt-12 border-t border-border transition-all duration-1000 delay-700 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-              }`}
-            >
-              <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">20+</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Лет опыта</p>
-              </div>
-              <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">5</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Методов</p>
-              </div>
-              <div>
-                <p className="font-serif text-3xl md:text-4xl text-sage">∞</p>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mt-2">Изменений</p>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
