@@ -6,10 +6,8 @@ export function Footer() {
           {/* Logo & Tagline */}
           <div className="md:col-span-4">
             <p className="font-serif text-2xl tracking-wide text-foreground mb-1">Игорь Слепеньков</p>
-            <p className="text-xs tracking-widest uppercase text-muted-foreground mb-4">Онтолог · Кинезиолог · Остеопат</p>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              20 лет помогаю людям обрести целостность — через естественное восстановление тела и души.
-            </p>
+            <p className="text-xs tracking-widest uppercase text-muted-foreground mb-4">проводник в мир здоровья</p>
+            <p className="text-sm text-muted-foreground leading-relaxed">25 лет помогаю людям обрести целостность — через естественное восстановление тела и души.</p>
           </div>
 
           {/* Navigation */}
