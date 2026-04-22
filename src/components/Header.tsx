@@ -28,12 +28,6 @@ export function Header() {
               Методы
             </a>
             <a
-              href="#seminars"
-              className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
-            >
-              Семинары
-            </a>
-            <a
               href="#reviews"
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
             >
@@ -83,13 +77,6 @@ export function Header() {
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
             >
               Методы
-            </a>
-            <a
-              href="#seminars"
-              onClick={() => setIsMenuOpen(false)}
-              className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Семинары
             </a>
             <a
               href="#reviews"
