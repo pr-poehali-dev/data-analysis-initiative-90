@@ -36,42 +36,45 @@ export function CourseSignup() {
             Базовый курс
           </h2>
           <p className="text-muted-foreground leading-relaxed max-w-2xl mx-auto text-lg">
-            Программа для тех, кто хочет начать путь к целостности, осознанности и внутренней гармонии.
-            Оставьте заявку — я свяжусь с вами и расскажу подробности.
+            Приглашаем всех желающих на обучение Базовому уровню уникальной авторской методики Системы Созидательного Развития.
           </p>
         </div>
 
         <div
           className={`grid lg:grid-cols-2 gap-12 lg:gap-20 transition-all duration-1000 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
-          {/* Left — details */}
-          <div className="space-y-8">
-            <div className="flex gap-4 items-start">
-              <div className="mt-1 text-sage shrink-0"><Icon name="CheckCircle" size={20} /></div>
-              <div>
-                <p className="font-medium text-foreground mb-1">Осознанность и присутствие</p>
-                <p className="text-muted-foreground text-sm leading-relaxed">Практики проживания настоящего момента и контакта с собой</p>
-              </div>
+          {/* Left — info */}
+          <div className="space-y-8 flex flex-col justify-center">
+            <div>
+              <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Автор курса</p>
+              <p className="text-foreground text-lg font-medium">Золотарёва Наталья Леонидовна</p>
             </div>
-            <div className="flex gap-4 items-start">
-              <div className="mt-1 text-sage shrink-0"><Icon name="CheckCircle" size={20} /></div>
-              <div>
-                <p className="font-medium text-foreground mb-1">Интеграция мыслей, чувств и действий</p>
-                <p className="text-muted-foreground text-sm leading-relaxed">Работа с внутренними противоречиями и подавленными состояниями</p>
-              </div>
+            <div>
+              <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Преподаватель</p>
+              <p className="text-foreground text-lg font-medium">Слепеньков Игорь Анатольевич</p>
+              <p className="text-muted-foreground text-sm mt-1">Преподаватель Системы Созидательного Развития</p>
             </div>
-            <div className="flex gap-4 items-start">
-              <div className="mt-1 text-sage shrink-0"><Icon name="CheckCircle" size={20} /></div>
-              <div>
-                <p className="font-medium text-foreground mb-1">Личная ответственность</p>
-                <p className="text-muted-foreground text-sm leading-relaxed">Выстраивание опоры на себя и здоровых границ в отношениях</p>
-              </div>
-            </div>
-            <div className="flex gap-4 items-start">
-              <div className="mt-1 text-sage shrink-0"><Icon name="CheckCircle" size={20} /></div>
-              <div>
-                <p className="font-medium text-foreground mb-1">Целостность восприятия</p>
-                <p className="text-muted-foreground text-sm leading-relaxed">Гештальт-подход к пониманию себя и своих паттернов</p>
+            <div>
+              <p className="text-xs tracking-widest uppercase text-muted-foreground mb-3">Сайт и сообщество</p>
+              <div className="flex flex-col gap-3">
+                <a
+                  href="https://so-razvitye.ru"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm text-foreground hover:text-sage transition-colors"
+                >
+                  <Icon name="Globe" size={16} />
+                  so-razvitye.ru
+                </a>
+                <a
+                  href="https://t.me/sorazvitye"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm text-foreground hover:text-sage transition-colors"
+                >
+                  <Icon name="Send" size={16} />
+                  t.me/sorazvitye
+                </a>
               </div>
             </div>
           </div>
