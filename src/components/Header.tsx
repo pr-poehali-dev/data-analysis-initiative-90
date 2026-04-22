@@ -10,7 +10,7 @@ export function Header() {
           {/* Logo */}
           <a href="/" className="font-serif text-xl tracking-wide text-foreground leading-tight">
             <span className="block">Игорь Слепеньков</span>
-            <span className="block text-xs tracking-[0.2em] text-muted-foreground font-sans font-light uppercase">Онтолог · Кинезиолог · Остеопат</span>
+            <span className="block text-xs tracking-[0.2em] text-muted-foreground font-sans font-light uppercase">личный приём и семинары</span>
           </a>
 
           {/* Desktop Navigation */}
