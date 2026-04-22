@@ -1,13 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 
-const steps = [
-  {
-    number: "01",
-    title: "Путь к здоровью",
-    description:
-      "Настоящее исцеление не происходит в спешке. Мы движемся вместе — бережно, осознанно, уважая природный ритм вашего тела и души.",
-  },
-]
+const steps: { number: string; title: string; description: string }[] = []
 
 export function Process() {
   const [isVisible, setIsVisible] = useState(false)
@@ -42,7 +35,7 @@ export function Process() {
                   isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
                 }`}
               >
-                Как проходит работа
+                Путь к здоровью
               </p>
               <h2
                 className={`font-serif text-4xl md:text-5xl font-light text-foreground mb-6 text-balance transition-all duration-1000 delay-200 ${
