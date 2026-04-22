@@ -58,9 +58,10 @@ export function Footer() {
               <a href="tel:+79174440090" className="text-sm text-foreground hover:text-sage transition-colors">
                 +7 917 444-00-90
               </a>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                г. Уфа,<br />ул. Ростовская, 18Б
-              </p>
+              <p className="text-sm text-muted-foreground leading-relaxed">г. Уфа,
+ул. Ростовская, 18К
+
+</p>
             </div>
           </div>
         </div>
