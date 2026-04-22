@@ -46,10 +46,7 @@ export function Contact() {
               className={`text-muted-foreground leading-relaxed mb-12 max-w-md transition-all duration-1000 delay-300 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
-            >
-              Каждое исцеление начинается с первого шага. Запишитесь на приём — и мы вместе найдём
-              путь к вашей целостности и здоровью.
-            </p>
+            >Каждое исцеление проходит индивидуально, согласно Вашему природному ритму. Иногда для решения  запроса достаточно одного сеанса, а иногда это многомерная работа постепенна. Многое зависит не от только от меня, но и от готовности человека менять и меняться.</p>
 
             {/* Contact Info */}
             <div
@@ -65,7 +62,7 @@ export function Contact() {
               </div>
               <div>
                 <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Адрес приёма</p>
-                <p className="text-foreground">г. Уфа, ул. Ростовская, д. 18Б</p>
+                <p className="text-foreground">г. Уфа, ул. Ростовская, д. 18К</p>
               </div>
               <div>
                 <p className="text-xs tracking-widest uppercase text-muted-foreground mb-3">Социальные сети</p>
