@@ -4,6 +4,7 @@ import { Philosophy } from "@/components/Philosophy"
 import { Services } from "@/components/Services"
 import { Testimonials } from "@/components/Testimonial"
 import { Contact } from "@/components/Contact"
+import { CourseSignup } from "@/components/CourseSignup"
 import { Footer } from "@/components/Footer"
 
 export default function Index() {
@@ -15,6 +16,7 @@ export default function Index() {
       <Services />
       <Testimonials />
       <Contact />
+      <CourseSignup />
       <Footer />
     </main>
   )
