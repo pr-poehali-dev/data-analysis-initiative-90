@@ -62,7 +62,7 @@ export function Contact() {
               </div>
               <div>
                 <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Адрес приёма</p>
-                <p className="text-foreground">г. Уфа, ул. Ростовская, д. 18К</p>
+                <p className="text-foreground">г. Уфа, ул. Ростовская, д. 18 </p>
               </div>
               <div>
                 <p className="text-xs tracking-widest uppercase text-muted-foreground mb-3">Социальные сети</p>
