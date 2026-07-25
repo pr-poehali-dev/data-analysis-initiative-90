@@ -6,10 +6,12 @@ import { Testimonials } from "@/components/Testimonial"
 import { Contact } from "@/components/Contact"
 import { CourseSignup } from "@/components/CourseSignup"
 import { Footer } from "@/components/Footer"
+import { AnnouncementPopup } from "@/components/AnnouncementPopup"
 
 export default function Index() {
   return (
     <main className="min-h-screen">
+      <AnnouncementPopup />
       <Header />
       <Hero />
       <Philosophy />
