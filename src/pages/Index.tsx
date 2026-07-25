@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero"
 import { Philosophy } from "@/components/Philosophy"
 import { Services } from "@/components/Services"
 import { Testimonials } from "@/components/Testimonial"
+import { Events } from "@/components/Events"
 import { Contact } from "@/components/Contact"
 import { CourseSignup } from "@/components/CourseSignup"
 import { Footer } from "@/components/Footer"
@@ -17,6 +18,7 @@ export default function Index() {
       <Philosophy />
       <Services />
       <Testimonials />
+      <Events />
       <Contact />
       <CourseSignup />
       <Footer />

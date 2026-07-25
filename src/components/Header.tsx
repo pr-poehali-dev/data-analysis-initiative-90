@@ -34,6 +34,12 @@ export function Header() {
               Отзывы
             </a>
             <a
+              href="#events"
+              className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
+            >
+              События
+            </a>
+            <a
               href="#contact"
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors duration-500"
             >
@@ -84,6 +90,13 @@ export function Header() {
               className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
             >
               Отзывы
+            </a>
+            <a
+              href="#events"
+              onClick={() => setIsMenuOpen(false)}
+              className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors"
+            >
+              События
             </a>
             <a
               href="#contact"
